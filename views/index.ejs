@@ -28,23 +28,23 @@
                 <form method="post" action="/booking" class="card p-4 bg-white">
                     <div class="mb-3">
                         <label for="name" class="form-label">Név <span class="text-danger">*</span></label>
-                        <input id="name" name="name" type="text" class="form-control" value="<%= values.name %>" required>
+                        <input id="name" name="name" type="text" class="form-control" value="<%= values.name %>">
                     </div>
 
                     <div class="mb-3">
                         <label for="email" class="form-label">E-mail <span class="text-danger">*</span></label>
-                        <input id="email" name="email" type="email" class="form-control" value="<%= values.email %>" required>
+                        <input id="email" name="email" type="email" class="form-control" value="<%= values.email %>">
                         <div class="form-text">Legalább 1-1 karakter a @ előtt és után (pl. abc@def.hu)</div>
                     </div>
 
                     <div class="mb-3">
                         <label for="datetime" class="form-label">Dátum és időpont <span class="text-danger">*</span></label>
-                        <input id="datetime" name="datetime" type="datetime-local" class="form-control" value="<%= values.datetime %>" required>
+                        <input id="datetime" name="datetime" type="datetime-local" class="form-control" value="<%= values.datetime %>">
                     </div>
 
                     <div class="mb-3">
                         <label for="guests" class="form-label">Nézők száma <span class="text-danger">*</span></label>
-                        <input id="guests" name="guests" type="number" class="form-control" min="1" max="10" value="<%= values.guests %>" required>
+                        <input id="guests" name="guests" type="number" class="form-control" min="1" max="10" value="<%= values.guests %>">
                         <div class="form-text">Minimum 1, maximum 10 fő</div>
                     </div>
 

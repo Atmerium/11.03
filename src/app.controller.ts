@@ -14,7 +14,7 @@ export class AppController {
       values: {
         name: '',
         email: '',
-        dateTime: '',
+        datetime: '',
         guests: '1',
       },
     };
@@ -85,7 +85,7 @@ export class AppController {
       });
     }
 
-    await this.appService.saveBooking({
+    this.appService.saveBooking({
       name: values.name,
       email: values.email,
       datetime: values.datetime,
